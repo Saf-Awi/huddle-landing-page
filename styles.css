@@ -1,0 +1,156 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 38%, 92%); }
+
+:root {
+--clr-Violet: hsl(257, 40%, 49%);
+--clr-Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--clr-Violet);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.text-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/*---------container--------*/
+
+.container {
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+    
+    
+}
+/*---------right text--------*/
+.text-container {
+    width: 450px;
+    padding: 80px;
+}
+
+.reg-btn {
+    padding: 15px 60px;
+    border-radius: 30px;
+    color: var(--clr-Violet);
+    font-size: 16px;
+    border: none;
+}
+
+.reg-btn:hover {
+    cursor: pointer;
+}
+
+/*---------left img--------*/
+.illustration-img {
+   width: 600px;
+}
+
+/*---------icons--------*/
+
+.socials {
+    display: flex;
+}
+
+.facebook, .twitter, .instagram {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   
+   
+}
+
+svg {
+    width: 15px;
+    height: 15px;
+}
+
+.facebook {
+    right: 200px;
+}
+
+.twitter {
+    right: 160px;
+}
+
+.instagram {
+    right: 120px;
+}
+
+.facebook, .twitter, .instagram:hover {
+    cursor: pointer;
+}
+
+/*---------mobile view--------*/
+
+@media screen and (max-width: 769px){
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .title, .logo {
+        width: 150px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+       
+    }
+
+
+    .illustration-img, .img-container {
+        width: 350px;
+        margin-left: 30px;
+    }
+
+    .text-container {
+        width: 300px;
+        margin-top: -50px;
+    }
+    
+    .facebook {
+        margin-right: 70px;
+    }
+
+    .twitter {
+        margin-right: 65px;
+    }
+
+    .instagram {
+        margin-right: 60px;
+    }
+
+    .attribution {
+        position: absolute;
+        right: 90px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+   
+}
